@@ -1,0 +1,218 @@
+ sans* {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    
+    background-color: #E4DED9;
+}
+.logo {
+    margin-top: 0px; /* Adjust the top margin of the logo to move it down */
+    margin-left: 50px;
+    margin-right: 60px;
+  }
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 20px;
+    transition: height 0.3s ease; 
+    
+}
+
+nav .menu .menu-button {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px;
+    transition: height 0.3s ease; 
+  } 
+.menu ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.menu {
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 90px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline; /* Display the list items horizontally */
+  }
+  
+  nav ul li a {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block; /* Display the links as blocks */
+    color: #A17D60;
+    text-align: center;
+    padding: 30px 50px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #F8F7F6;
+  }
+  
+  nav form {
+    margin-left: 10px; /* Adjust spacing between the last menu item and the search bar */
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #eae2da;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container button i {
+    font-size: 20px;
+    color: #8d6e63;
+}
+
+.search-container input::placeholder {
+    color: #8d6e63;
+    font-size: 16px;
+}
+.search-container button i {
+    font-size: 25px; /* Tăng kích thước biểu tượng */
+    color: #8d6e63;
+}
+
+.slideshow-container {
+    max-width: 1800px; /* Định rộng tối đa của slideshow */
+    position: relative;
+    margin: 110px auto; /* Tự căn giữa container */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Ẩn phần tràn ra ngoài */
+    background-color: #fff; /* Thêm màu nền nếu cần */
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 620px; /* Chiều cao của slide, có thể điều chỉnh theo yêu cầu */
+    position: relative;
+}
+
+.slide img {
+    width: auto; /* Đảm bảo ảnh nằm trong phạm vi của container */
+    height: 100%; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng khi thay đổi kích thước */
+}
+.space {
+    font-size: 50px;
+    color: #8d6e63;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.slidef-show {
+  font-size: 50px;
+  color: #8d6e63;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.slidef-show {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.list {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.list img {
+  border-radius: 25px;
+  background-color: #E4DED9;
+  max-width: 250px;
+  margin-right: 10px; /* Adjust spacing between images */
+}
+
+.slidef-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:120px;
+  width: 1500px;
+  overflow: hidden;
+  position: relative;
+}
+.list-images {
+  display: flex;
+ transition: 0.5s;
+}
+.btn:hover {
+  color: white;
+}
+.btn {
+  font-size: 45px;
+  color: #999;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn-left {
+  left: 0;
+}
+.btn-right {
+  right: 0;
+}
+.index-images {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.active {
+  background-color: #999;
+}
