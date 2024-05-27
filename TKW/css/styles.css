@@ -1,165 +1,149 @@
- sans* {
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+/* Reset margins and apply font-family */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 header {
-    
-    background-color: #E4DED9;
-}
-.logo {
-    margin-top: 0px; /* Adjust the top margin of the logo to move it down */
-    margin-left: 50px;
-    margin-right: 60px;
-  }
-nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    border-radius: 20px;
-    transition: height 0.3s ease; 
-    
+  background-color: #E4DED9;
 }
 
-nav .menu .menu-button {
-    display: flex;
-    align-items: center;
+.logo {
+  margin: 0 60px 0 50px;
 }
+
 .logo img {
-    height: 80px;
-    transition: height 0.3s ease; 
-  } 
+  height: 80px;
+  transition: height 0.3s ease;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 20px;
+  transition: height 0.3s ease;
+}
+
 .menu ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-.menu {
-    font-weight: 600;
-    font-size: 20px;
-    margin-right: 90px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
-  
-  nav ul li {
-    display: inline; /* Display the list items horizontally */
-  }
-  
-  nav ul li a {
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    display: inline-block; /* Display the links as blocks */
-    color: #A17D60;
-    text-align: center;
-    padding: 30px 50px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  nav ul li a:hover {
-    background-color: #F8F7F6;
-  }
-  
-  nav form {
-    margin-left: 10px; /* Adjust spacing between the last menu item and the search bar */
-  }
-  .search-container {
-    display: flex;
-    align-items: center;
-    background-color: #eae2da;
-    border: 2px solid #000000;
-    border-radius: 25px;
-    padding: 5px 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #A17D60;
+  padding: 30px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu ul li a:hover {
+  background-color: #F8F7F6;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #eae2da;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-left: 10px;
 }
 
 .search-container input[type="text"] {
-    border: none;
-    outline: none;
-    background: none;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000000;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
 }
 
 .search-container button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .search-container button i {
-    font-size: 20px;
-    color: #8d6e63;
+  font-size: 25px;
+  color: #8d6e63;
 }
 
 .search-container input::placeholder {
-    color: #8d6e63;
-    font-size: 16px;
-}
-.search-container button i {
-    font-size: 25px; /* Tăng kích thước biểu tượng */
-    color: #8d6e63;
+  color: #8d6e63;
+  font-size: 16px;
 }
 
 .slideshow-container {
-    max-width: 1800px; /* Định rộng tối đa của slideshow */
-    position: relative;
-    margin: 110px auto; /* Tự căn giữa container */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    overflow: hidden; /* Ẩn phần tràn ra ngoài */
-    background-color: #fff; /* Thêm màu nền nếu cần */
+  max-width: 100%;
+  margin: 10px auto;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 620px; /* Chiều cao của slide, có thể điều chỉnh theo yêu cầu */
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 620px;
+  position: relative;
 }
 
 .slide img {
-    width: auto; /* Đảm bảo ảnh nằm trong phạm vi của container */
-    height: 100%; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
-    object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng khi thay đổi kích thước */
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
+
 .space {
-    font-size: 50px;
-    color: #8d6e63;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-}
-.slidef-show {
   font-size: 50px;
   color: #8d6e63;
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: 0;
 }
+
+.space img {
+  margin: 0 20px;
+}
+
 .slidef-show {
   width: 100%;
   overflow: hidden;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .list {
@@ -171,25 +155,9 @@ nav .menu .menu-button {
   border-radius: 25px;
   background-color: #E4DED9;
   max-width: 250px;
-  margin-right: 10px; /* Adjust spacing between images */
+  margin-right: 10px;
 }
 
-.slidef-show {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left:120px;
-  width: 1500px;
-  overflow: hidden;
-  position: relative;
-}
-.list-images {
-  display: flex;
- transition: 0.5s;
-}
-.btn:hover {
-  color: white;
-}
 .btn {
   font-size: 45px;
   color: #999;
@@ -199,12 +167,19 @@ nav .menu .menu-button {
   transition: 0.5s;
   cursor: pointer;
 }
+
+.btn:hover {
+  color: white;
+}
+
 .btn-left {
   left: 0;
 }
+
 .btn-right {
   right: 0;
 }
+
 .index-images {
   position: absolute;
   bottom: 10px;
@@ -215,4 +190,131 @@ nav .menu .menu-button {
 
 .active {
   background-color: #999;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .menu-links,
+  .search-container {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .menu-button i {
+    font-size: 30px;
+    color:  #A17D60;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    width: 100%;
+  }
+
+  .menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu ul li a {
+    padding: 10px;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .space {
+    font-size: 40px;
+  }
+
+  .list img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    height: 50px;
+  }
+
+  .search-container input[type="text"] {
+    font-size: 14px;
+  }
+
+  .search-container button i {
+    font-size: 20px;
+  }
+
+  .slide {
+    height: 200px;
+  }
+
+  .space {
+    font-size: 30px;
+  }
+
+  .list img {
+    max-width: 100px;
+  }
+
+  .btn {
+    font-size: 25px;
+  }
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #E4DED9;
+  color: white;
+  border: none;
+}
+
+.dropdown {
+  display: none;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .menu-button {
+      display: block;
+  }
+  .dropdown {
+      display: block;
+  }
 }
