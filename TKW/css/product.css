@@ -1,5 +1,5 @@
 body {
-  background-color: #e4ded9 !important;
+  background-color: #f3efed !important;
   font-family: "Open Sans", sans-serif;
 }
 .product-image {
@@ -61,7 +61,7 @@ body {
     margin-left: -25px;
     margin-right: 10px;
   } */
-.centered-div {
+.centered-div2 {
   padding: 20px;
   position: absolute;
   display: block;
@@ -69,4 +69,7 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateX(-50%);
+}
+footer{
+  left: -20%;
 }
